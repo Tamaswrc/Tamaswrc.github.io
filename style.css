@@ -1,0 +1,30 @@
+:root{--bg:#fbfbfd;--fg:#16181d;--muted:#5b6170;--card:#fff;--line:#e6e8ee;--accent:#4f5bd5;--accent2:#14b8a6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--fg:#eef0f4;--muted:#9aa1b2;--card:#171a21;--line:#262a34;--accent:#8b93ff;--accent2:#2dd4bf}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg)}
+a{color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.brand{font-weight:700;font-size:19px;text-decoration:none;color:var(--fg);letter-spacing:-.01em}
+.brand span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav a{margin-left:20px;text-decoration:none;color:var(--muted);font-size:15px}
+nav a:hover{color:var(--fg)}
+.hero{padding:72px 0 40px}
+.hero h1{font-size:44px;line-height:1.1;margin:0 0 14px;letter-spacing:-.02em}
+.hero p{color:var(--muted);font-size:19px;max-width:620px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;padding-bottom:56px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{margin:0 0 6px;font-size:21px}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:3px 9px;border-radius:99px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);margin-bottom:12px}
+.card p{color:var(--muted);margin:0 0 14px}
+.links a{margin-right:16px;font-weight:600;text-decoration:none;font-size:15px}
+article{padding:48px 0 64px}
+article h1{font-size:34px;letter-spacing:-.02em;margin:0 0 6px}
+article h2{font-size:22px;margin:36px 0 8px}
+article .meta{color:var(--muted);margin:0 0 24px}
+article li{margin:6px 0}
+.note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent2);border-radius:10px;padding:14px 18px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer .wrap{padding:24px 22px}
+@media (max-width:560px){.hero h1{font-size:34px}nav a{margin-left:14px}}
