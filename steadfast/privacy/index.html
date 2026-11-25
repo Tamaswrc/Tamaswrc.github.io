@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Steadfast privacy policy · MetanoiaGT</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><div class="wrap"><a class="brand" href="/"><span>Metanoia</span>GT</a><nav><a href="/#apps">Apps</a><a href="/steadfast/">Steadfast</a><a href="/steadfast/privacy/">Privacy</a></nav></div></header>
+<main class="wrap"><article>
+<h1>Steadfast privacy policy</h1><p class="meta">Last updated 22 November 2026</p>
+<p>This policy explains what the Steadfast Android app ("the app") does with information. The app is made by Gellert Tamas, a sole trader in the United Kingdom trading as MetanoiaGT ("we").</p>
+<div class="note"><strong>In short:</strong> we do not collect, store or receive any of your personal data. Your settings stay on your phone. The only thing that leaves your phone is the website name lookups (DNS) needed for filtering, which go to Cloudflare for Families.</div>
+
+<h2>Information stored on your device</h2>
+<p>The app keeps these settings only in its private storage on your phone:</p>
+<ul><li>the apps you block and the websites you add,</li><li>daily time limits and how many minutes you used each app today,</li><li>lock settings, such as cool-down timers and your PIN, which is stored only as a salted hash, never as the PIN itself.</li></ul>
+<p>This data is never sent to us or anyone else. It is excluded from Android cloud backup. Uninstalling the app deletes it.</p>
+
+<h2>VPN service (content filter)</h2>
+<p>To block adult websites, the app uses Android's VpnService to create a local filter on your phone. It is not a VPN that hides your location or encrypts your traffic, and it does not route your browsing through any server of ours.</p>
+<ul><li>Only DNS lookups (the step where your phone turns a website name into an address) pass through the filter. All other traffic goes straight to the internet as normal.</li>
+<li>The filter checks each name on your device against a built-in list, your own blocked sites and adult keywords, and answers SafeSearch addresses for Google, Bing and YouTube.</li>
+<li>Lookups that are allowed are forwarded to Cloudflare for Families (1.1.1.3 and 1.0.0.3), a public DNS service that refuses adult and malware sites. Cloudflare's handling of these lookups is covered by its own <a href="https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/">privacy commitments</a>.</li>
+<li>The app does not record, log, store or share the websites you visit.</li></ul>
+
+<h2>Accessibility service</h2>
+<p>With your permission, the app uses Android's Accessibility API to:</p>
+<ul><li>detect which app is open, so it can close apps on your block list and count time for daily limits,</li>
+<li>read the address bar of supported browsers, so it can close adult pages,</li>
+<li>notice when a settings screen that would turn off protection is opened while the lock is on, and close it.</li></ul>
+<p>This happens on your phone in real time. The app does not record what is on your screen, does not read your messages or passwords, and does not send any of this information anywhere. The app explains this and asks for your consent before you turn the service on.</p>
+
+<h2>Usage access</h2>
+<p>If the app asks for Usage access, it is used only on your phone to measure how long you use apps for your daily limits. This information is not sent anywhere.</p>
+
+<h2>Installed apps</h2>
+<p>The app reads the list of apps on your phone that can be opened from the launcher, so you can choose which ones to block. This list is not sent anywhere.</p>
+
+<h2>What we do not do</h2>
+<ul><li>No accounts, sign-in, advertising or analytics.</li><li>No selling or sharing of data with anyone.</li><li>No collection of location, contacts, photos, messages or browsing history.</li></ul>
+
+<h2>Children</h2>
+<p>The app does not collect data from anyone, including children.</p>
+
+<h2>Changes</h2>
+<p>If the app changes in a way that affects this policy, we will update this page and the date at the top.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy: <a href="mailto:tamaswrc@gmail.com">tamaswrc@gmail.com</a>.</p>
+</article></main>
+<footer><div class="wrap">© 2026 MetanoiaGT · Gellert Tamas, sole trader, United Kingdom · Contact: <a href="mailto:tamaswrc@gmail.com">tamaswrc@gmail.com</a></div></footer></body></html>
